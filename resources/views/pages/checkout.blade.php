@@ -25,7 +25,7 @@
                             <form method="post" action="{{URL::to('/save-checkout-customer')}}">
                                 {{csrf_field()}}                         
                                 <input type="text" placeholder="Email *" name="shipping_email">                           
-                                <input type="text" placeholder="Tên *" name="shipping_name">
+                                <input type="text" placeholder="Tên người nhận hàng *" name="shipping_name">
                                 <input type="text" placeholder="Địa chỉ *" name="shipping_address">
                                 <input type="text" placeholder="Phone *" name="shipping_phone">
                                 <p>Ghi chú gửi hàng</p>
@@ -40,12 +40,12 @@
                 				
             </div>
         </div>
-        <div class="review-payment">
+        {{-- <div class="review-payment">
             <h2>Xem lại giỏ hàng</h2>
-        </div>
+        </div> --}}
 
         
-        <div class="payment-options">
+        {{-- <div class="payment-options">
                 <span>
                     <label><input type="checkbox"> Direct Bank Transfer</label>
                 </span>
@@ -55,7 +55,7 @@
                 <span>
                     <label><input type="checkbox"> Paypal</label>
                 </span>
-            </div>
+            </div> --}}
     {{-- </div> --}}
 </section> <!--/#cart_items-->
 

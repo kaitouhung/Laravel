@@ -11,15 +11,21 @@
         </div><!--/breadcrums-->
 
         <div class="review-payment">
-            <h2>Xem lại giỏ hàng</h2>
+			<h2>Xem lại giỏ hàng</h2>
+			<?php
+            $message=Session::get('message');
+            if($message){
+              echo('<span class="text-alert">'.$message.'</span>');
+              Session::put('message',null);
+
+			}
+			?>           
         </div>
 
         	<div class="table-responsive cart_info">
 				<?php
                 $content = Cart::content();
-                // echo('<pre>');
-                // echo($content);
-                // echo('</pre>');
+                
 				
                 ?>
                 
@@ -79,19 +85,23 @@
 				</table>
 			</div>
 
+		<form action="{{URL::to('/order-place')}}" method="POST">
+			{{csrf_field()}}
+			<div class="payment-options">
+                <span>
+                    <label><input name="payment_option" value="1" type="radio">Trả bằng thẻ ATM</label>
+                </span>
+                <span>
+                    <label><input name="payment_option" value="2" type="radio">Nhận hàng rồi trả </label>
+                </span>
+                <span>
+                    <label><input name="payment_option" value="3" type="radio">Thanh toán bằng thẻ ghi nợ</label>
+				</span>
+				<input type="submit" name="send_order_place" value="Đặt hàng" class="btn btn-primary btn-sm">
+       		</div>
 
+		</form>
         
-        <div class="payment-options">
-                <span>
-                    <label><input name="payment_option" value="1" type="checkbox">Trả bằng thẻ ATM</label>
-                </span>
-                <span>
-                    <label><input name="payment_option" value="2" type="checkbox">Nhận hàng rồi trả </label>
-                </span>
-                <span>
-                    <label><input name="payment_option" value="3" type="checkbox">Thanh toán bằng thẻ ghi nợ</label>
-                </span>
-            </div>
     {{-- </div> --}}
 </section> <!--/#cart_items-->
 

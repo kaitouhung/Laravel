@@ -64,7 +64,7 @@
                     <br />
                     <p>
                     <label for="fullname">Giá sản phẩm * :</label>
-                    <input type="text" id="fullname" class="form-control" name="product_price" required value="{{$product->product_name}}"/>                
+                    <input type="text" id="fullname" class="form-control" name="product_price" required value="{{$product->product_price}}"/>                
                    
                     <br />
                     <p>

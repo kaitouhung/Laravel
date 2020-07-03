@@ -88,6 +88,13 @@ Route::post('/save-checkout-customer','CheckoutController@save_checkout_customer
 
 Route::get('/payment','CheckoutController@payment');
 
+//Order 
+Route::post('/order-place','CheckoutController@order_place');
+Route::get('/manage-order','CheckoutController@manage_order');
+Route::get('/view-order/{orderId}','CheckoutController@view_order');
+Route::get('/confirm-order/{orderId}','CheckoutController@confirm_order');
+Route::get('/delete-order/{orderId}','CheckoutController@delete_order');
+
 
 
 

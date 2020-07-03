@@ -14,7 +14,7 @@
         <div id="similar-product" class="carousel slide" data-ride="carousel">
             
               <!-- Wrapper for slides -->
-                <div class="carousel-inner">
+                {{-- <div class="carousel-inner">
                     <div class="item active">
                       <a href=""><img src="{{URL::to('public/frontend/images/product-details/similar1.jpg')}}" alt=""></a>
                       <a href=""><img src="{{URL::to('public/frontend/images/product-details/similar2.jpg')}}" alt=""></a>
@@ -22,7 +22,7 @@
                     </div>
                   
                     
-                </div>
+                </div> --}}
 
               <!-- Controls -->
               <a class="left item-control" href="#similar-product" data-slide="prev">
@@ -93,7 +93,8 @@
         
         <div class="tab-pane fade " id="reviews" >
             <div class="col-sm-12">
-                <ul>
+                <p>Hiu hiu</p>
+                {{-- <ul>
                     <li><a href=""><i class="fa fa-user"></i>EUGEN</a></li>
                     <li><a href=""><i class="fa fa-clock-o"></i>12:41 PM</a></li>
                     <li><a href=""><i class="fa fa-calendar-o"></i>31 DEC 2014</a></li>
@@ -111,7 +112,7 @@
                     <button type="button" class="btn btn-default pull-right">
                         Submit
                     </button>
-                </form>
+                </form> --}}
             </div>
         </div>
         

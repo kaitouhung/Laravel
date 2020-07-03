@@ -25,12 +25,7 @@
 </head><!--/head-->
 
 <body>
-	<?php 
-		echo Session::get('customer_id');
-		echo Session::get('shipping_id');
-
-
-	?>
+		
 	<header id="header"><!--header-->
 		<div class="header_top"><!--header_top-->
 			<div class="container">
@@ -38,8 +33,8 @@
 					<div class="col-sm-6">
 						<div class="contactinfo">
 							<ul class="nav nav-pills">
-								<li><a href="#"><i class="fa fa-phone"></i> +2 95 01 88 821</a></li>
-								<li><a href="#"><i class="fa fa-envelope"></i> info@domain.com</a></li>
+								<li><a href="#"><i class="fa fa-phone"></i>9 9 9 9</a></li>
+								<li><a href="#"><i class="fa fa-envelope"></i> barca@gmail.com</a></li>
 							</ul>
 						</div>
 					</div>
@@ -63,23 +58,23 @@
 				<div class="row">
 					<div class="col-md-4 clearfix">
 						<div class="logo pull-left">
-							<a href="index.html "><img src=" {{('public/frontend/images/home/logo.png')}}" alt="" /></a>
+							<a href="index.html "><img style="width:100%" src=" {{asset('public/frontend/images/home/logo_logo.png')}}" alt="" /></a>
 						</div>
 						<div class="btn-group pull-right clearfix">
 							<div class="btn-group">
 								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
-									USA
+									VN
 									<span class="caret"></span>
 								</button>
 								<ul class="dropdown-menu">
-									<li><a href="">Canada</a></li>
-									<li><a href="">UK</a></li>
+									<li><a href="">VUK</a></li>
+									<li><a href="">US</a></li>
 								</ul>
 							</div>
 							
 							<div class="btn-group">
 								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
-									DOLLAR
+									VNĐ
 									<span class="caret"></span>
 								</button>
 								<ul class="dropdown-menu">
@@ -203,39 +198,39 @@
 						<div class="carousel-inner">
 							<div class="item active">
 								<div class="col-sm-6">
-									<h1><span>E</span>-SHOPPER</h1>
-									<h2>Free E-Commerce Template</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+									<h1><span>Sports</span>-CULES</h1>
+									{{-- <h2>Free E-Commerce Template</h2> --}}
+									<p>Hơn cả một câu lạc bộ</p>
 									<button type="button" class="btn btn-default get">Get it now</button>
 								</div>
 								<div class="col-sm-6">
-									<img src=" {{('public/frontend/images/home/girl1.jpg')}}" class="girl img-responsive" alt="" />
-									<img src=" {{('public/frontend/images/home/pricing.png')}}"  class="pricing" alt="" />
+									<img src=" {{asset('public/frontend/images/home/logo_barca.jpg')}}" class="girl img-responsive" alt="" />
+									{{-- <img src=" {{('public/frontend/images/home/pricing.png')}}"  class="pricing" alt="" /> --}}
 								</div>
 							</div>
 							<div class="item">
 								<div class="col-sm-6">
-									<h1><span>E</span>-SHOPPER</h1>
-									<h2>100% Responsive Design</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+									<h1><span>Sports</span>-CULES</h1>
+									{{-- <h2>Free E-Commerce Template</h2> --}}
+									<p>Hơn cả một câu lạc bộ</p>
 									<button type="button" class="btn btn-default get">Get it now</button>
 								</div>
 								<div class="col-sm-6">
-									<img src=" {{('public/frontend/images/home/girl2.jpg')}}" class="girl img-responsive" alt="" />
-									<img src=" {{('public/frontend/images/home/pricing.png')}}"  class="pricing" alt="" />
+									<img src=" {{asset('public/frontend/images/home/logo_dormund.jpg')}}" class="girl img-responsive" alt="" />
+									{{-- <img src=" {{asset('public/frontend/images/home/pricing.png')}}"  class="pricing" alt="" /> --}}
 								</div>
 							</div>
 							
 							<div class="item">
 								<div class="col-sm-6">
-									<h1><span>E</span>-SHOPPER</h1>
-									<h2>Free Ecommerce Template</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+									<h1><span>Sports</span>-CULES</h1>
+									{{-- <h2>Free E-Commerce Template</h2> --}}
+									<p>Hơn cả một câu lạc bộ</p>
 									<button type="button" class="btn btn-default get">Get it now</button>
 								</div>
 								<div class="col-sm-6">
-									<img src=" public/frontend/images/home/girl3.jpg" class="girl img-responsive" alt="" />
-									<img src=" public/frontend/images/home/pricing.png" class="pricing" alt="" />
+									<img src=" {{asset('public/frontend/images/home/logo_milan.jpg')}}" class="girl img-responsive" alt="" />
+									{{-- <img src=" {{asset('public/frontend/images/home/pricing.png')}}" class="pricing" alt="" /> --}}
 								</div>
 							</div>
 							
@@ -281,7 +276,7 @@
 							<div class="brands-name">
 								<ul class="nav nav-pills nav-stacked">
 									@foreach($brand as $key =>$brand)
-								<li><a href="{{URL::to('/thuong-hieu-san-pham/'.$brand->brand_id)}}"> <span class="pull-right">(50)</span>{{$brand->brand_name}}</a></li>
+								<li><a href="{{URL::to('/thuong-hieu-san-pham/'.$brand->brand_id)}}"> <span class="pull-right"></span>{{$brand->brand_name}}</a></li>
 									@endforeach
 							</div>
 						</div><!--/brands_products-->
@@ -316,8 +311,8 @@
 				<div class="row">
 					<div class="col-sm-2">
 						<div class="companyinfo">
-							<h2><span>e</span>-shopper</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor</p>
+							<h2><span>Sport</span>-CULES</h2>
+							<p>Hơn cả một câu lạc bộ</p>
 						</div>
 					</div>
 					<div class="col-sm-7">
@@ -325,7 +320,7 @@
 							<div class="video-gallery text-center">
 								<a href="#">
 									<div class="iframe-img">
-										<img src=" {{('public/frontend/images/home/iframe1.png')}}" alt="" />
+										<img src=" {{asset('public/frontend/images/home/logo_logo.png')}}" alt="" />
 									</div>
 									<div class="overlay-icon">
 										<i class="fa fa-play-circle-o"></i>
@@ -340,7 +335,7 @@
 							<div class="video-gallery text-center">
 								<a href="#">
 									<div class="iframe-img">
-										<img src=" {{('public/frontend/images/home/iframe2.png')}}" alt="" />
+										<img src=" {{asset('public/frontend/images/home/logo_logo.png')}}" alt="" />
 									</div>
 									<div class="overlay-icon">
 										<i class="fa fa-play-circle-o"></i>
@@ -355,7 +350,7 @@
 							<div class="video-gallery text-center">
 								<a href="#">
 									<div class="iframe-img">
-										<img src=" {{('public/frontend/images/home/iframe3.png')}}" alt="" />
+										<img src=" {{asset('public/frontend/images/home/logo_logo.png')}}" alt="" />
 									</div>
 									<div class="overlay-icon">
 										<i class="fa fa-play-circle-o"></i>
@@ -370,7 +365,7 @@
 							<div class="video-gallery text-center">
 								<a href="#">
 									<div class="iframe-img">
-										<img src=" {{('public/frontend/images/home/iframe4.png')}}" alt="" />
+										<img src=" {{asset('public/frontend/images/home/logo_logo.png')}}" alt="" />
 									</div>
 									<div class="overlay-icon">
 										<i class="fa fa-play-circle-o"></i>
@@ -383,8 +378,8 @@
 					</div>
 					<div class="col-sm-3">
 						<div class="address">
-							<img src="{{(' public/frontend/images/home/map.png')}}" alt="" />
-							<p>505 S Atlantic Ave Virginia Beach, VA(Virginia)</p>
+							<img src="{{asset('public/frontend/images/home/logo_barca.jpg')}}" alt="" />
+							{{-- <p>505 S Atlantic Ave Virginia Beach, VA(Virginia)</p> --}}
 						</div>
 					</div>
 				</div>
