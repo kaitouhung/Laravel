@@ -9,7 +9,7 @@
     <div class="">
       <div class="page-title">
         <div class="title_left">
-          <h3>Cập nhật danh mục sản phẩm</h3>
+          <h3>Cập nhật Nhãn hàng</h3>
           <?php
             $message=Session::get('message');
             if($message){

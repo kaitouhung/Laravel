@@ -88,7 +88,7 @@
                           ?>
                         </td>
                         <td class=""><a  href="{{URL::to('/edit-category-product/'.$cate_pro->category_id)}}">Sửa</a>
-                        <td class=""><a  onclick="return confirm('Bạn có muốn xóa sản phẩm này ?')" href="{{URL::to('/delete-category-product/'.$cate_pro->category_id)}}">Xóa</a>
+                        <td class=""><a  onclick="return confirm('Bạn có muốn xóa danh mục sản phẩm này ?')" href="{{URL::to('/delete-category-product/'.$cate_pro->category_id)}}">Xóa</a>
                         </td>
                       </tr>
                       

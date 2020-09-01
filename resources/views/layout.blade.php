@@ -27,31 +27,7 @@
 <body>
 		
 	<header id="header"><!--header-->
-		<div class="header_top"><!--header_top-->
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-6">
-						<div class="contactinfo">
-							<ul class="nav nav-pills">
-								<li><a href="#"><i class="fa fa-phone"></i>9 9 9 9</a></li>
-								<li><a href="#"><i class="fa fa-envelope"></i> barca@gmail.com</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-6">
-						<div class="social-icons pull-right">
-							<ul class="nav navbar-nav">
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!--/header_top-->
+	
 		
 		<div class="header-middle"><!--header-middle-->
 			<div class="container">
@@ -60,36 +36,13 @@
 						<div class="logo pull-left">
 							<a href="index.html "><img style="width:100%" src=" {{asset('public/frontend/images/home/logo_logo.png')}}" alt="" /></a>
 						</div>
-						<div class="btn-group pull-right clearfix">
-							<div class="btn-group">
-								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
-									VN
-									<span class="caret"></span>
-								</button>
-								<ul class="dropdown-menu">
-									<li><a href="">VUK</a></li>
-									<li><a href="">US</a></li>
-								</ul>
-							</div>
-							
-							<div class="btn-group">
-								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
-									VNĐ
-									<span class="caret"></span>
-								</button>
-								<ul class="dropdown-menu">
-									<li><a href="">Canadian Dollar</a></li>
-									<li><a href="">Pound</a></li>
-								</ul>
-							</div>
-						</div>
+						
 					</div>
 					<div class="col-md-8 clearfix">
 						<div class="shop-menu clearfix pull-right">
 							<ul class="nav navbar-nav">
 								
-								<li><a href=""><i class="fa fa-star"></i>Yêu thích</a></li>
-
+								
 								<?php
 									$customer_id=Session::get('customer_id');
 									$shipping_id=Session::get('shipping_id');
@@ -194,46 +147,19 @@
 							<li data-target="#slider-carousel" data-slide-to="1"></li>
 							<li data-target="#slider-carousel" data-slide-to="2"></li>
 						</ol>
-						
+					
 						<div class="carousel-inner">
 							<div class="item active">
-								<div class="col-sm-6">
-									<h1><span>Sports</span>-CULES</h1>
-									{{-- <h2>Free E-Commerce Template</h2> --}}
-									<p>Hơn cả một câu lạc bộ</p>
-									<button type="button" class="btn btn-default get">Get it now</button>
-								</div>
-								<div class="col-sm-6">
-									<img src=" {{asset('public/frontend/images/home/logo_barca.jpg')}}" class="girl img-responsive" alt="" />
-									{{-- <img src=" {{('public/frontend/images/home/pricing.png')}}"  class="pricing" alt="" /> --}}
-								</div>
+								<img style="height: 450px;width: 92%;" src="{{asset('/public/frontend/images/home/logo_barca.jpg')}}">
 							</div>
 							<div class="item">
-								<div class="col-sm-6">
-									<h1><span>Sports</span>-CULES</h1>
-									{{-- <h2>Free E-Commerce Template</h2> --}}
-									<p>Hơn cả một câu lạc bộ</p>
-									<button type="button" class="btn btn-default get">Get it now</button>
-								</div>
-								<div class="col-sm-6">
-									<img src=" {{asset('public/frontend/images/home/logo_dormund.jpg')}}" class="girl img-responsive" alt="" />
-									{{-- <img src=" {{asset('public/frontend/images/home/pricing.png')}}"  class="pricing" alt="" /> --}}
-								</div>
+								<img style="height: 450px;width: 92%;" src="{{asset('/public/frontend/images/home/logo_dormund.jpg')}}">
 							</div>
-							
 							<div class="item">
-								<div class="col-sm-6">
-									<h1><span>Sports</span>-CULES</h1>
-									{{-- <h2>Free E-Commerce Template</h2> --}}
-									<p>Hơn cả một câu lạc bộ</p>
-									<button type="button" class="btn btn-default get">Get it now</button>
-								</div>
-								<div class="col-sm-6">
-									<img src=" {{asset('public/frontend/images/home/logo_milan.jpg')}}" class="girl img-responsive" alt="" />
-									{{-- <img src=" {{asset('public/frontend/images/home/pricing.png')}}" class="pricing" alt="" /> --}}
-								</div>
+								<img style="height: 450px;width: 92%;" src="{{asset('/public/frontend/images/home/logo_milan.jpg')}}">
 							</div>
-							
+							</div>
+								
 						</div>
 						
 						<a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">

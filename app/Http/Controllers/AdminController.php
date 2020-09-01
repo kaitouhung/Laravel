@@ -38,6 +38,8 @@ class AdminController extends Controller
     public function showDashboard(){
         $this->AuthLogin();
         return view('admin.admin-dashboard');
+        // return Redirect::to('/admin-dashboard');
+
     }
 
     public function Dashboard(Request $request){
